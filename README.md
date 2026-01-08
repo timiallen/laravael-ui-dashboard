@@ -30,11 +30,10 @@
 
 * **Atomic Component System**: Menggunakan komponen Blade yang sangat modular (`<x-card>`, `<x-badge>`, `<x-button>`, dll).
 * **Intelligent Theme Switcher**: Dukungan penuh *Light* & *Dark mode* yang tersinkronisasi secara instan.
-* **Sticky Sidebar System**: Navigasi yang tetap terlihat saat melakukan screenshot halaman penuh (Go Full Page).
 * **E-Commerce & POS Ready**:
     * 🛒 **Shopping Cart**: Sistem keranjang belanja real-time menggunakan Alpine.js.
     * 📟 **Terminal POS**: Antarmuka kasir interaktif dengan kalkulasi otomatis.
-* **Ultra Clean Code**: Dibangun dengan prinsip kesederhanaan, tanpa penggunaan utilitas CSS yang berlebihan untuk menjaga keterbacaan.
+* **Clean Code**: Dibangun dengan prinsip kesederhanaan, tanpa penggunaan utilitas CSS yang berlebihan untuk menjaga keterbacaan.
 
 ---
 
