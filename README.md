@@ -1,59 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+  </a>
 </p>
 
-## About Laravel
+<h1 align="center">Laravael UI Dashboard</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <strong>Sistem Dashboard Premium & POS Kit built with Laravel 12, Tailwind CSS, and Alpine.js.</strong><br>
+  Designed & Crafted with ❤️ by <strong>Rafael Nuansa</strong>.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+<img src="https://img.shields.io/badge/Laravel-11.x-red?style=for-the-badge&logo=laravel" alt="Laravel Version">
+<img src="https://img.shields.io/badge/Tailwind_CSS-3.x-blue?style=for-the-badge&logo=tailwind-css" alt="Tailwind Version">
+<img src="https://img.shields.io/badge/Alpine.js-3.x-cyan?style=for-the-badge&logo=alpine.js" alt="Alpine Version">
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ✨ Tentang Laravael UI
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+**Laravael UI** adalah ekosistem dashboard administratif modern yang memadukan keindahan desain minimalis dengan performa backend Laravel yang tangguh. Dashboard ini dirancang khusus untuk pengembang yang menginginkan antarmuka premium tanpa harus membangun dari nol.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 💎 Fitur Utama
 
-### Premium Partners
+* **Atomic Component System**: Menggunakan komponen Blade yang sangat modular (`<x-card>`, `<x-badge>`, `<x-button>`, dll).
+* **Intelligent Theme Switcher**: Dukungan penuh *Light* & *Dark mode* yang tersinkronisasi secara instan.
+* **Sticky Sidebar System**: Navigasi yang tetap terlihat saat melakukan screenshot halaman penuh (Go Full Page).
+* **E-Commerce & POS Ready**:
+    * 🛒 **Shopping Cart**: Sistem keranjang belanja real-time menggunakan Alpine.js.
+    * 📟 **Terminal POS**: Antarmuka kasir interaktif dengan kalkulasi otomatis.
+* **Ultra Clean Code**: Dibangun dengan prinsip kesederhanaan, tanpa penggunaan utilitas CSS yang berlebihan untuk menjaga keterbacaan.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🛠️ Tech Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* **Framework**: [Laravel 12](https://laravel.com)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com)
+* **Frontend Logic**: [Alpine.js](https://alpinejs.dev)
+* **Icons**: [Tabler Icons](https://tabler-icons.io)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📦 Instalasi Proyek
 
-## Security Vulnerabilities
+Jalankan perintah berikut untuk meng-setup proyek di lokal Anda:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Persiapan Awal
+```bash
+git clone [https://github.com/rafaelnuansa/laravael-ui-dashboard.git](https://github.com/rafaelnuansa/laravael-ui-dashboard.git)
+cd laravael-ui-dashboard
