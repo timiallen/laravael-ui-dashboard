@@ -110,7 +110,7 @@
             }">
 
             {{-- Header Include --}}
-            <x-header/>
+            <x-header />
 
             {{-- Page Content --}}
             <main class="flex-1 p-4 md:p-8">
@@ -121,7 +121,10 @@
 
             {{-- Footer (Opsional) --}}
             <footer class="p-6 text-center text-xs text-gray-400 font-medium">
-                &copy; {{ date('Y') }} Rafael Dashboard. All rights reserved.
+                <p class="text-xs text-gray-500">
+                   &copy; {{ date('Y') }}, Built with ❤️ by <a href="https://github.com/rafaelnuansa"
+                        class="font-bold hover:text-indigo-600">Rafael Nuansa</a>
+                </p>
             </footer>
         </div>
     </div>

@@ -12,6 +12,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/**
+ * --------------------------------------------------------------------------
+ * Laravael UI Dashboard
+ * --------------------------------------------------------------------------
+ * @package     Laravael UI
+ * @author      Rafael Nuansa <email@anda.com>
+ * @copyright   Copyright (c) 2026 Rafael Nuansa
+ * @license     MIT License
+ * @link        https://github.com/rafaelnuansa/laravael-ui-dashboard
+ * --------------------------------------------------------------------------
+ * Please do not remove this header. Respect the craft.
+ */
+ 
 [x-cloak] {
     display: none !important;
 }

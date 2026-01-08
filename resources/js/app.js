@@ -1,3 +1,17 @@
+/**
+ * --------------------------------------------------------------------------
+ * Laravael UI Dashboard
+ * --------------------------------------------------------------------------
+ * @package     Laravael UI
+ * @author      Rafael Nuansa <email@anda.com>
+ * @copyright   Copyright (c) 2026 Rafael Nuansa
+ * @license     MIT License
+ * @link        https://github.com/rafaelnuansa/laravael-ui-dashboard
+ * --------------------------------------------------------------------------
+ * Please do not remove this header. Respect the craft.
+ */
+
+
 /* ========================
    Bootstrap & Alpine
    ======================== */
@@ -89,3 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
         color: isDark ? '#f3f4f6' : '#111827',
     })
 })
+
+console.log(
+    "%c🚀 Laravael UI Dashboard %cBy Rafael Nuansa",
+    "color: #4f46e5; font-size: 20px; font-weight: bold; background: #f5f3ff; padding: 10px; border-radius: 8px;",
+    "color: #6b7280; font-size: 14px; margin-left: 10px;"
+);
+console.log("Enjoy this kit? Support at: https://trakteer.id/rafaelnuansa");
