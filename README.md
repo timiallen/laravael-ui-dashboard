@@ -2,9 +2,11 @@
 
 #### Light Mode
 ![Laravael Light Mode](screenshot/Laravael%20Light%20Mode.png)
+![Laravael Dark Mode](screenshot/Login%20Page.png)
 
 #### Dark Mode
 ![Laravael Dark Mode](screenshot/Laravael%20Dark%20Mode.png)
+![Laravael Dark Mode](screenshot/Login%20Page%20Dark.png)
 
 <p align="center">
   <a href="https://laravel.com" target="_blank">
