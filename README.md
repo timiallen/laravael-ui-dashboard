@@ -13,7 +13,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/Laravel-11.x-red?style=for-the-badge&logo=laravel" alt="Laravel Version">
-<img src="https://img.shields.io/badge/Tailwind_CSS-3.x-blue?style=for-the-badge&logo=tailwind-css" alt="Tailwind Version">
+<img src="https://img.shields.io/badge/Tailwind_CSS-4.x-blue?style=for-the-badge&logo=tailwind-css" alt="Tailwind Version">
 <img src="https://img.shields.io/badge/Alpine.js-3.x-cyan?style=for-the-badge&logo=alpine.js" alt="Alpine Version">
 <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
