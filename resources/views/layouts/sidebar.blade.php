@@ -34,16 +34,19 @@
     }"
     @mouseleave="tooltipVisible = false">
 
-    {{-- Tooltip for Collapsed Sidebar --}}
-    <div x-show="tooltipVisible && !expanded" 
+   <div x-show="tooltipVisible && !expanded" 
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 translate-x-2"
          x-transition:enter-end="opacity-100 translate-x-0"
-         class="fixed left-[95px] z-[10000] px-3 py-1.5 bg-gray-900 dark:bg-indigo-600 text-white text-xs font-semibold rounded-lg pointer-events-none "
+         class="fixed left-[90px] z-[10000] px-4 py-2.5 bg-gray-900 dark:bg-indigo-600 text-white text-[13px] font-bold rounded-xl pointer-events-none shadow-2xl min-w-[120px] whitespace-nowrap border border-white/10"
          :style="`top: ${tooltipTop}px; transform: translateY(-50%);`"
          x-cloak>
-        <span x-text="tooltipText"></span>
-        <div class="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2 w-0 h-0 border-y-[6px] border-y-transparent border-r-[6px] border-r-gray-900 dark:border-r-indigo-600"></div>
+        
+        <div class="flex items-center gap-2">
+            <span x-text="tooltipText"></span>
+        </div>
+
+        <div class="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2 w-0 h-0 border-y-[7px] border-y-transparent border-r-[7px] border-r-gray-900 dark:border-r-indigo-600"></div>
     </div>
 
     {{-- Logo Area --}}

@@ -55,6 +55,7 @@ Route::prefix('pages/auth')->name('auth.')->group(function () {
 Route::prefix('pages')->group(function () {
     Route::get('/blank',    fn() => view('pages.blank'))->name('pages.blank');
     Route::get('/apps/pos',    fn() => view('pages.apps.pos'))->name('pages.apps.pos');
+    Route::get('/apps/chat',    fn() => view('pages.apps.chat'))->name('pages.apps.chat');
 });
 
 // --- E-COMMERCE LOGIC (CRUD) ---

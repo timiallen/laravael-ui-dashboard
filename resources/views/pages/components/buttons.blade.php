@@ -3,90 +3,232 @@
 @section('title', 'Buttons UI Kit')
 
 @section('content')
-<div class="space-y-10 pb-20">
-    
-    <div class="flex flex-col gap-2">
-        <h1 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Buttons</h1>
-        <p class="text-gray-500 dark:text-gray-400 font-medium text-sm">Koleksi komponen tombol modern yang dibangun dengan Laravel Blade Components.</p>
+    <div class="space-y-16 pb-24">
+
+        {{-- ================================================= --}}
+        {{-- Header --}}
+        {{-- ================================================= --}}
+        <header class="space-y-2">
+            <h1 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
+                Buttons
+            </h1>
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400 max-w-2xl">
+                UI Kit tombol modern berbasis Laravel Blade Components.
+                Mendukung variant, size, icon, posisi icon, disabled, loading spinner, dan mode link.
+            </p>
+        </header>
+
+        {{-- ================================================= --}}
+        {{-- Variants --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4" x-data="{ showCode: false }">
+            <div class="flex justify-between items-center">
+                <h3 class="ui-title">Button Variants</h3>
+                <x-code-toggle />
+            </div>
+
+            <x-card>
+                <div class="p-8 flex flex-wrap gap-4">
+                    <x-button>Primary</x-button>
+                    <x-button variant="secondary">Secondary</x-button>
+                    <x-button variant="success">Success</x-button>
+                    <x-button variant="danger">Danger</x-button>
+                    <x-button variant="ghost">Ghost</x-button>
+                </div>
+
+                <x-code>
+                    &lt;x-button&gt;Primary&lt;/x-button&gt;
+                    &lt;x-button variant="secondary"&gt;Secondary&lt;/x-button&gt;
+                    &lt;x-button variant="success"&gt;Success&lt;/x-button&gt;
+                    &lt;x-button variant="danger"&gt;Danger&lt;/x-button&gt;
+                    &lt;x-button variant="ghost"&gt;Ghost&lt;/x-button&gt;
+                </x-code>
+            </x-card>
+        </section>
+
+        {{-- ================================================= --}}
+        {{-- Icons --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4" x-data="{ showCode: false }">
+            <div class="flex justify-between items-center">
+                <h3 class="ui-title">With Icons</h3>
+                <x-code-toggle />
+            </div>
+
+            <x-card>
+                <div class="p-8 flex gap-4 flex-wrap">
+                    <x-button icon="plus">Tambah</x-button>
+                    <x-button icon="device-floppy" variant="success">Simpan</x-button>
+                    <x-button icon="bell" variant="secondary" class="p-3" />
+                </div>
+
+                <x-code>
+                    &lt;x-button icon="plus"&gt;Tambah&lt;/x-button&gt;
+                    &lt;x-button icon="device-floppy" variant="success"&gt;Simpan&lt;/x-button&gt;
+                    &lt;x-button icon="bell" variant="secondary" class="p-3" /&gt;
+                </x-code>
+            </x-card>
+        </section>
+
+        {{-- ================================================= --}}
+        {{-- Icon Positions --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4" x-data="{ showCode: false }">
+            <div class="flex justify-between items-center">
+                <h3 class="ui-title">Icon Positions</h3>
+                <x-code-toggle />
+            </div>
+
+            <x-card>
+                <div class="p-8 flex flex-wrap gap-6 items-center">
+                    <x-button icon="arrow-left">Left</x-button>
+                    <x-button icon="arrow-right" iconPosition="right">Right</x-button>
+                    <x-button icon="upload" iconPosition="top">Upload</x-button>
+                    <x-button icon="chevron-down" iconPosition="bottom">More</x-button>
+                </div>
+
+                <x-code>
+                  <div class="p-8 flex flex-wrap gap-6 items-center">
+                    <x-button icon="arrow-left">Left</x-button>
+                    <x-button icon="arrow-right" iconPosition="right">Right</x-button>
+                    <x-button icon="upload" iconPosition="top">Upload</x-button>
+                    <x-button icon="chevron-down" iconPosition="bottom">More</x-button>
+                </div>
+                </x-code>
+            </x-card>
+        </section>
+
+        {{-- ================================================= --}}
+        {{-- Sizes --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4">
+            <h3 class="ui-title">Button Sizes</h3>
+
+            <x-card>
+                <div class="p-8 flex items-center gap-4">
+                    <x-button size="sm">Small</x-button>
+                    <x-button size="md">Medium</x-button>
+                    <x-button size="lg">Large</x-button>
+                </div>
+            </x-card>
+        </section>
+
+        {{-- ================================================= --}}
+        {{-- Disabled --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4">
+            <h3 class="ui-title">Disabled State</h3>
+
+            <x-card>
+                <div class="p-8 flex gap-4 flex-wrap">
+                    <x-button disabled>Disabled</x-button>
+                    <x-button variant="secondary" disabled>Disabled</x-button>
+                    <x-button icon="lock" disabled>Locked</x-button>
+                </div>
+            </x-card>
+        </section>
+
+        {{-- ================================================= --}}
+        {{-- Loading / Spinner --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4" x-data="{ showCode: false }">
+            <div class="flex justify-between items-center">
+                <h3 class="ui-title">Loading / Spinner</h3>
+                <x-code-toggle />
+            </div>
+
+            <x-card>
+                <div class="p-8 flex gap-4 flex-wrap items-center">
+                    <x-button loading>
+                        Loading
+                    </x-button>
+
+                    <x-button loading icon="device-floppy">
+                        Saving
+                    </x-button>
+
+                    <x-button loading variant="secondary" class="p-3" />
+
+                    <x-button loading size="sm">
+                        Small
+                    </x-button>
+
+                    <x-button loading size="lg">
+                        Large
+                    </x-button>
+
+                    <x-button loading disabled>
+                        Disabled Loading
+                    </x-button>
+
+                    <x-button loading href="#">
+                        Redirecting
+                    </x-button>
+                </div>
+
+                <x-code>
+      <x-button loading>
+                        Loading
+                    </x-button>
+
+                    <x-button loading icon="device-floppy">
+                        Saving
+                    </x-button>
+
+                    <x-button loading variant="secondary" class="p-3" />
+
+                    <x-button loading size="sm">
+                        Small
+                    </x-button>
+
+                    <x-button loading size="lg">
+                        Large
+                    </x-button>
+
+                    <x-button loading disabled>
+                        Disabled Loading
+                    </x-button>
+
+                    <x-button loading href="#">
+                        Redirecting
+                    </x-button>
+                </x-code>
+            </x-card>
+        </section>
+
+
+        {{-- ================================================= --}}
+        {{-- Full Width --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4">
+            <h3 class="ui-title">Full Width</h3>
+
+            <x-card>
+                <div class="p-8 space-y-3 max-w-sm">
+                    <x-button class="w-full">Submit</x-button>
+                    <x-button class="w-full" variant="secondary">Cancel</x-button>
+                </div>
+            </x-card>
+        </section>
+
+        {{-- ================================================= --}}
+        {{-- Button as Link --}}
+        {{-- ================================================= --}}
+        <section class="space-y-4">
+            <h3 class="ui-title">Button as Link</h3>
+
+            <x-card>
+                <div class="p-8 flex gap-4 flex-wrap">
+                    <x-button href="https://example.com" target="_blank">
+                        External Link
+                    </x-button>
+
+                    <x-button href="/dashboard" variant="secondary" icon="arrow-right">
+                        Dashboard
+                    </x-button>
+                </div>
+            </x-card>
+        </section>
+
     </div>
-
-    <section class="space-y-4" x-data="{ showCode: false }">
-        <div class="flex items-center justify-between">
-            <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Button Variants</h3>
-            <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase tracking-wider text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-            </button>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800  overflow-hidden transition-all">
-            <div class="p-8 flex flex-wrap gap-4">
-                <x-button variant="primary">Primary Button</x-button>
-                <x-button variant="secondary">Secondary</x-button>
-                <x-button variant="danger">Danger</x-button>
-                <x-button variant="success">Success</x-button>
-            </div>
-
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6">
-                    <pre class="text-[11px] text-gray-600 dark:text-gray-400 font-mono"><code>&lt;x-button variant="primary"&gt;Primary Button&lt;/x-button&gt;
-&lt;x-button variant="secondary"&gt;Secondary&lt;/x-button&gt;
-&lt;x-button variant="danger"&gt;Danger&lt;/x-button&gt;</code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="space-y-4" x-data="{ showCode: false }">
-        <div class="flex items-center justify-between">
-            <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">With Icons</h3>
-            <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase tracking-wider text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-            </button>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800  overflow-hidden">
-            <div class="p-8 flex flex-wrap gap-4">
-                <x-button variant="primary" icon="plus">Tambah Data</x-button>
-                <x-button variant="success" icon="device-floppy">Simpan</x-button>
-                <x-button variant="secondary" icon="bell" class="p-3" />
-            </div>
-
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6">
-                    <pre class="text-[11px] text-gray-600 dark:text-gray-400 font-mono"><code>&lt;x-button variant="primary" icon="plus"&gt;Tambah Data&lt;/x-button&gt;
-&lt;x-button variant="secondary" icon="bell" class="p-3" /&gt;</code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="space-y-4" x-data="{ showCode: false }">
-        <div class="flex items-center justify-between">
-            <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Button Sizes</h3>
-            <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase tracking-wider text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-            </button>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 overflow-hidden transition-all">
-            <div class="p-8 flex items-center flex-wrap gap-4">
-                <x-button variant="primary" size="sm">Small</x-button>
-                <x-button variant="primary" size="md">Default (Medium)</x-button>
-                <x-button variant="primary" size="lg">Large Button</x-button>
-            </div>
-
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6">
-                    <pre class="text-[11px] text-gray-600 dark:text-gray-400 font-mono"><code>&lt;x-button size="sm"&gt;Small&lt;/x-button&gt;
-&lt;x-button size="md"&gt;Default&lt;/x-button&gt;
-&lt;x-button size="lg"&gt;Large Button&lt;/x-button&gt;</code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
 @endsection

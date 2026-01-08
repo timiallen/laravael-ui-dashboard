@@ -1,5 +1,5 @@
 <header
-    class="sticky top-0 z-[50] w-full border-b border-gray-100 bg-white/80 backdrop-blur-md transition-all duration-300 ease-in-out dark:border-gray-900 dark:bg-gray-950/80"
+    class="sticky top-0 z-[50] w-full border-b border-gray-100 bg-white transition-all duration-300 ease-in-out dark:border-gray-900 dark:bg-gray-950"
     x-data="{ 
         searchOpen: false, 
         searchQuery: '',

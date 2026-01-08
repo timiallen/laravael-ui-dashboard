@@ -9,6 +9,11 @@
         get total() {
             return this.cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
         },
+        init() {
+            if (window.innerWidth >= 1280) {
+                $store.sidebar.isExpanded = false;
+            }
+        },
         addToCart(product) {
             let found = this.cart.find(i => i.id === product.id);
             if (found) {
@@ -101,7 +106,7 @@
                 @foreach ($products as $p)
                     <x-card @click="addToCart({{ json_encode($p) }})"
                         class="group bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 cursor-pointer hover:border-indigo-500/50 transition-all hover:shadow-xl hover:shadow-indigo-500/5 active:scale-95">
-                        <div class="aspect-square rounded-2xl overflow-hidden mb-3 bg-gray-50 dark:bg-gray-800">
+                        <div class="aspec   t-square rounded-2xl overflow-hidden mb-3 bg-gray-50 dark:bg-gray-800">
                             <img src="{{ $p['img'] }}" class="w-full h-full object-cover">
                         </div>
                         <div class="space-y-1">
