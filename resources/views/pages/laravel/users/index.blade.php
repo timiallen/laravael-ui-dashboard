@@ -165,11 +165,11 @@
                                     </div>
                                     <div class="mt-6">
                                         @if(request('search'))
-                                            <x-button variant="secondary" size="sm" href="{{ route('laravel.users.index') }}" class="rounded-xl px-6">
+                                            <x-button variant="secondary"  href="{{ route('laravel.users.index') }}">
                                                 Reset Pencarian
                                             </x-button>
                                         @else
-                                            <x-button variant="secondary" size="sm" href="{{ route('laravel.users.create') }}" class="rounded-xl px-6">
+                                            <x-button variant="secondary"  href="{{ route('laravel.users.create') }}">
                                                 <i class="ti ti-plus mr-2"></i> Tambah Sekarang
                                             </x-button>
                                         @endif
