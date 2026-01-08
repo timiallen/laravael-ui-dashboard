@@ -24,11 +24,11 @@
 
 Jika proyek ini bermanfaat bagi Anda dan membantu mempercepat workflow Anda, pertimbangkan untuk memberikan dukungan agar pengembangan terus berlanjut:
 
-<a href="https://trakteer.id/rafaelnuansa?quantity=1" target="_blank">
+<a href="https://trakteer.id/rafaelnuansa?quantity=3" target="_blank">
   <img src="https://cdn.trakteer.id/images/embed/trbtn-red-1.png" height="40" style="border:0px;height:40px;" alt="Trakteer Saya">
 </a>
 
-Atau kunjungi langsung: [trakteer.id/rafaelnuansa](https://trakteer.id/rafaelnuansa?quantity=1)
+Atau kunjungi langsung: [trakteer.id/rafaelnuansa](https://trakteer.id/rafaelnuansa?quantity=3)
 
 ### 💎 Fitur Utama
 
