@@ -9,17 +9,6 @@
     selectedProduct: { name: '', id: null, url: '' } 
 }">
     
-    @if(session('success'))
-    <div x-data="{ show: true }" 
-         x-init="setTimeout(() => show = false, 4000)" 
-         x-show="show" 
-         x-transition.out.opacity.duration.1000ms
-         class="fixed top-6 right-6 z-[10002] flex items-center gap-3 bg-emerald-500 text-white px-6 py-4 rounded-2xl shadow-xl shadow-emerald-500/20 border border-emerald-400">
-        <i class="ti ti-circle-check text-xl"></i>
-        <p class="text-sm font-bold">{{ session('success') }}</p>
-        <button @click="show = false" class="ml-4 opacity-70 hover:opacity-100"><i class="ti ti-x"></i></button>
-    </div>
-    @endif
 
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div class="flex flex-col gap-1">

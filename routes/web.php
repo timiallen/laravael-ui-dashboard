@@ -50,6 +50,8 @@ Route::prefix('pages/auth')->name('auth.')->group(function () {
     Route::get('/register-basic', fn() => view('pages.auth.register-basic'))->name('register.basic');
     Route::get('/register-cover', fn() => view('pages.auth.register-cover'))->name('register.cover');
 });
+
+
 Route::prefix('pages')->group(function () {
     Route::get('/blank',    fn() => view('pages.blank'))->name('pages.blank');
     Route::get('/apps/pos',    fn() => view('pages.apps.pos'))->name('pages.apps.pos');
@@ -59,4 +61,8 @@ Route::prefix('pages')->group(function () {
 Route::prefix('ecommerce')->name('ecommerce.')->group(function () {
     Route::resource('products', ProductController::class);
     Route::get('/cart',       fn() => view('ecommerce.cart'))->name('cart');
+});
+
+Route::prefix('laravel')->name('laravel.')->group(function () {
+    Route::resource('users', App\Http\Controllers\Apps\Laravel\UserController::class);
 });

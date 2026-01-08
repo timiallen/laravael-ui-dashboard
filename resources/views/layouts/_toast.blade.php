@@ -1,7 +1,17 @@
 <div x-data="{
     toasts: [],
     position: 'bottom-right',
-    maxToasts: 5, {{-- Batas maksimal pesan yang tampil --}}
+    maxToasts: 5,
+    
+    init() {
+        @if(session('success'))
+            this.add({ detail: { type: 'success', message: '{{ session('success') }}' } });
+        @endif
+        @if(session('error'))
+            this.add({ detail: { type: 'error', message: '{{ session('error') }}' } });
+        @endif
+    },
+
     add(e) {
         const id = Date.now();
         if (e.detail.position) this.position = e.detail.position;
@@ -14,14 +24,12 @@
             show: false
         };
         
-        {{-- Logic Stacking & Limit --}}
         if (this.position.includes('top')) {
             this.toasts.unshift(newToast);
         } else {
             this.toasts.push(newToast);
         }
 
-        {{-- Hapus pesan tertua jika melebihi limit --}}
         if (this.toasts.length > this.maxToasts) {
             if (this.position.includes('top')) {
                 this.toasts.pop();
@@ -35,7 +43,6 @@
             if (t) t.show = true;
         }, 10);
 
-        {{-- Auto Remove --}}
         const duration = 5000;
         const interval = 50;
         const step = (interval / duration) * 100;
@@ -49,6 +56,7 @@
             }
         }, interval);
     },
+
     remove(id) {
         const t = this.toasts.find(x => x.id === id);
         if (t) t.show = false;
@@ -75,7 +83,6 @@
             x-transition:leave="transition duration-300 ease-in"
             x-transition:leave-end="opacity-0 scale-90"
             
-            {{-- Visual Stacking Effect: Pesan yang lebih lama (indeks lebih rendah) sedikit lebih pudar --}}
             class="pointer-events-auto relative overflow-hidden flex items-center gap-3 px-5 py-4 rounded-2xl border shadow-xl transition-all duration-300"
             :class="{
                 'bg-emerald-600 border-emerald-500 text-white': toast.type === 'success',
