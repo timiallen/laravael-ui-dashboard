@@ -55,7 +55,7 @@
             </div>
 
             {{-- Product Grid --}}
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @php
                     $products = [
                         [
@@ -103,25 +103,33 @@
                     ];
                 @endphp
 
-                @foreach ($products as $p)
-                    <x-card @click="addToCart({{ json_encode($p) }})"
-                        class="group bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 cursor-pointer hover:border-indigo-500/50 transition-all hover:shadow-xl hover:shadow-indigo-500/5 active:scale-95">
-                        <div class="aspec   t-square rounded-2xl overflow-hidden mb-3 bg-gray-50 dark:bg-gray-800">
-                            <img src="{{ $p['img'] }}" class="w-full h-full object-cover">
-                        </div>
-                        <div class="space-y-1">
-                            <p class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
-                                {{ $p['cat'] }}</p>
-                            <h3 class="text-sm font-bold text-gray-900 dark:text-white truncate">{{ $p['name'] }}</h3>
-                            <p class="text-sm font-bold text-gray-900 dark:text-white">
-                                Rp{{ number_format($p['price'], 0, ',', '.') }}</p>
-                        </div>
-                    </x-card>
-                @endforeach
+      @foreach ($products as $p)
+        <x-card @click="addToCart({{ json_encode($p) }})"
+            class="group bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 cursor-pointer hover:border-indigo-500/50 transition-all hover:shadow-xl hover:shadow-indigo-500/5 active:scale-95">
+            
+            {{-- Bagian Gambar: Diperbaiki --}}
+            <div class="aspect-square w-full rounded-2xl overflow-hidden mb-3 bg-gray-50 dark:bg-gray-800">
+                <img src="{{ $p['img'] }}" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
+                     alt="{{ $p['name'] }}">
+            </div>
+
+            <div class="space-y-1">
+                <p class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
+                    {{ $p['cat'] }}
+                </p>
+                <h3 class="text-sm font-bold text-gray-900 dark:text-white truncate">
+                    {{ $p['name'] }}
+                </h3>
+                <p class="text-sm font-bold text-gray-900 dark:text-white">
+                    Rp{{ number_format($p['price'], 0, ',', '.') }}
+                </p>
+            </div>
+        </x-card>
+    @endforeach
             </div>
         </div>
 
-        {{-- Sisi Kanan: Area Kasir (Sticky) --}}
         <div class="w-full lg:w-96 shrink-0">
             <div class="sticky top-24">
                 <x-card :padding="false" class="flex flex-col h-[calc(100vh-140px)]  overflow-hidden">

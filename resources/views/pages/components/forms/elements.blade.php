@@ -15,12 +15,8 @@
         <section class="space-y-4" x-data="{ showCode: false }">
             <div class="flex items-center justify-between">
                 <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Text Inputs</h3>
-                <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                    <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                    <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-                </button>
             </div>
-            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 shadow-sm">
+            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 ">
                 <div>
                     <label class="block text-xs font-bold text-gray-400 uppercase mb-2 ml-1">Default Input</label>
                     <input type="text" class="w-full bg-gray-50 dark:bg-gray-800 border-none rounded-2xl px-5 py-3.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 transition-all dark:text-white outline-none" placeholder="Enter your name...">
@@ -33,22 +29,13 @@
                     </div>
                 </div>
             </div>
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6 font-mono">
-                    <pre class="text-[11px] text-gray-500"><code>&lt;input class="w-full bg-gray-50 border-none rounded-2xl px-5 py-3.5 focus:ring-2 focus:ring-indigo-500"&gt;</code></pre>
-                </div>
-            </div>
         </section>
 
         <section class="space-y-4" x-data="{ showCode: false }">
             <div class="flex items-center justify-between">
                 <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Select & Switches</h3>
-                <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                    <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                    <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-                </button>
             </div>
-            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 shadow-sm">
+            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 ">
                 <div>
                     <label class="block text-xs font-bold text-gray-400 uppercase mb-2 ml-1">Custom Select</label>
                     <div class="relative">
@@ -67,17 +54,8 @@
                     </div>
                     <label class="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" class="sr-only peer" checked>
-                        <div class="w-11 h-6 bg-gray-200 dark:bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-indigo-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+                        <div class="w-11 h-6 bg-gray-200 dark:bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-indigo-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all "></div>
                     </label>
-                </div>
-            </div>
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6 font-mono">
-                    <pre class="text-[11px] text-gray-500"><code>&lt;!-- Toggle Switch --&gt;
-&lt;label class="relative inline-flex items-center cursor-pointer"&gt;
-  &lt;input type="checkbox" class="sr-only peer"&gt;
-  &lt;div class="w-11 h-6 bg-gray-200 peer-checked:bg-indigo-600 rounded-full"&gt;&lt;/div&gt;
-&lt;/label&gt;</code></pre>
                 </div>
             </div>
         </section>
@@ -85,17 +63,13 @@
         <section class="space-y-4" x-data="{ showCode: false }">
             <div class="flex items-center justify-between">
                 <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Choice Controls</h3>
-                <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                    <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                    <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-                </button>
             </div>
-            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 shadow-sm">
+            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 ">
                 <div class="grid grid-cols-2 gap-4">
                     <label class="flex items-center gap-3 group cursor-pointer">
                         <div class="relative flex items-center justify-center">
                             <input type="checkbox" class="peer sr-only" checked>
-                            <div class="w-6 h-6 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-lg peer-checked:bg-indigo-600 peer-checked:border-indigo-600 transition-all duration-300 shadow-inner"></div>
+                            <div class="w-6 h-6 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-lg peer-checked:bg-indigo-600 peer-checked:border-indigo-600 transition-all duration-300 "></div>
                             <i class="ti ti-check absolute text-white text-xs scale-0 peer-checked:scale-100 transition-transform"></i>
                         </div>
                         <span class="text-sm font-bold text-gray-600 dark:text-gray-400 group-hover:text-indigo-600 transition-colors">Checkbox</span>
@@ -103,18 +77,11 @@
                     <label class="flex items-center gap-3 group cursor-pointer">
                         <div class="relative flex items-center justify-center">
                             <input type="radio" name="radio-demo" class="peer sr-only" checked>
-                            <div class="w-6 h-6 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full peer-checked:border-indigo-600 transition-all duration-300 shadow-inner"></div>
+                            <div class="w-6 h-6 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full peer-checked:border-indigo-600 transition-all duration-300 "></div>
                             <div class="absolute w-2.5 h-2.5 bg-indigo-600 rounded-full scale-0 peer-checked:scale-100 transition-transform"></div>
                         </div>
                         <span class="text-sm font-bold text-gray-600 dark:text-gray-400 group-hover:text-indigo-600 transition-colors">Radio</span>
                     </label>
-                </div>
-            </div>
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6 font-mono">
-                    <pre class="text-[11px] text-gray-500"><code>&lt;!-- Custom Checkbox --&gt;
-&lt;input type="checkbox" class="peer sr-only"&gt;
-&lt;div class="peer-checked:bg-indigo-600 rounded-lg"&gt;...&lt;/div&gt;</code></pre>
                 </div>
             </div>
         </section>
@@ -122,12 +89,8 @@
         <section class="space-y-4" x-data="{ showCode: false }">
             <div class="flex items-center justify-between">
                 <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Validation States</h3>
-                <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                    <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                    <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-                </button>
             </div>
-            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 shadow-sm">
+            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 space-y-6 ">
                 <div>
                     <label class="block text-xs font-bold text-rose-500 uppercase mb-2 ml-1">Error State</label>
                     <div class="relative">
@@ -144,30 +107,15 @@
                     </div>
                 </div>
             </div>
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6 font-mono">
-                    <pre class="text-[11px] text-gray-500"><code>&lt;!-- Error Input --&gt;
-&lt;input class="bg-rose-50 border-rose-200 focus:ring-0"&gt;</code></pre>
-                </div>
-            </div>
         </section>
 
         <section class="space-y-4 lg:col-span-2" x-data="{ showCode: false }">
             <div class="flex items-center justify-between">
                 <h3 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Textarea & Rich Text</h3>
-                <button @click="showCode = !showCode" class="text-[10px] font-bold uppercase text-gray-400 hover:text-indigo-600 transition-colors flex items-center gap-1 font-mono">
-                    <i class="ti" :class="showCode ? 'ti-eye-off' : 'ti-code'"></i>
-                    <span x-text="showCode ? 'Hide Code' : 'Show Code'"></span>
-                </button>
             </div>
-            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 shadow-sm">
+            <div class="bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 p-8 ">
                 <label class="block text-xs font-bold text-gray-400 uppercase mb-2 ml-1">Description / Bio</label>
                 <textarea rows="5" class="w-full bg-gray-50 dark:bg-gray-800 border-none rounded-3xl px-6 py-5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 transition-all dark:text-white outline-none resize-none" placeholder="Tell us about yourself..."></textarea>
-            </div>
-            <div x-show="showCode" x-collapse x-cloak>
-                <div class="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 p-6 font-mono">
-                    <pre class="text-[11px] text-gray-500"><code>&lt;textarea class="bg-gray-50 rounded-3xl px-6 py-5"&gt;&lt;/textarea&gt;</code></pre>
-                </div>
             </div>
         </section>
     </div>

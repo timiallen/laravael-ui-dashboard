@@ -5,9 +5,6 @@
 @section('content')
     <div class="space-y-16 pb-24">
 
-        {{-- ================================================= --}}
-        {{-- Header --}}
-        {{-- ================================================= --}}
         <header class="space-y-2">
             <h1 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
                 Buttons
@@ -18,9 +15,6 @@
             </p>
         </header>
 
-        {{-- ================================================= --}}
-        {{-- Variants --}}
-        {{-- ================================================= --}}
         <section class="space-y-4" x-data="{ showCode: false }">
             <div class="flex justify-between items-center">
                 <h3 class="ui-title">Button Variants</h3>
