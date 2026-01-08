@@ -7,7 +7,7 @@
 <h1 align="center">Laravael UI Dashboard</h1>
 
 <p align="center">
-  <strong>Sistem Dashboard Premium & POS Kit built with Laravel 12, Tailwind CSS, and Alpine.js.</strong><br>
+  <strong> Dashboard Kit UI built with Laravel 12, Tailwind CSS, and Alpine.js.</strong><br>
   Designed & Crafted with ❤️ by <strong>Rafael Nuansa</strong>.
 </p>
 
